@@ -1,0 +1,81 @@
+@forward "./fonts";
+
+$font-fam: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $font-fam;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+
+b,
+p,
+pre,
+span {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  color: currentColor;
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  color: currentColor;
+  text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:disabled {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  color: currentColor;
+}
+
+input,
+input:hover,
+input:focus,
+input:valid,
+input:invalid,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:valid,
+textarea:invalid {
+  font-size: 1em;
+  font-weight: normal;
+  color: currentColor;
+  font-style: $font-fam;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
