@@ -10,5 +10,9 @@ export default class HomeView extends Vue {}
 </script>
 
 <style lang="scss">
+@use "../assets/css/schemes/dark";
 
+.home {
+
+}
 </style>
