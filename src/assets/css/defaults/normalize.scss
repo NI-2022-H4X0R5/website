@@ -18,6 +18,8 @@ body {
 
 @for $i from 1 through 6 {
   h#{$i} {
+    margin: 0;
+    padding: 0;
     font-size: 1em;
     font-style: normal;
     font-weight: normal;
@@ -29,6 +31,8 @@ b,
 p,
 pre,
 span {
+  margin: 0;
+  padding: 0;
   font-size: 1em;
   font-style: normal;
   font-weight: normal;
@@ -52,9 +56,11 @@ button:focus,
 button:disabled {
   border: none;
   outline: none;
+  font-size: 1em;
   cursor: pointer;
   background: none;
   color: currentColor;
+  font-family: $font-fam;
 }
 
 input,
@@ -67,7 +73,10 @@ textarea:hover,
 textarea:focus,
 textarea:valid,
 textarea:invalid {
+  border: none;
+  outline: none;
   font-size: 1em;
+  background: none;
   font-weight: normal;
   color: currentColor;
   font-style: $font-fam;
@@ -78,4 +87,15 @@ video {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
 }

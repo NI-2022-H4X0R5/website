@@ -8,13 +8,10 @@
     <nav class="header__menu">
       <ul class="header__menu__items">
         <li class="header__menu__items-link">
-          <RouterLink to="/" active-class="active" class="header__menu__items-link__content">Accueil</RouterLink>
+          <RouterLink to="/auth/login" active-class="active" class="header__menu__items-link__content">Mon compte</RouterLink>
         </li>
         <li class="header__menu__items-link">
-          <RouterLink to="/" active-class="active" class="header__menu__items-link__content">Liste des MST</RouterLink>
-        </li>
-        <li class="header__menu__items-link">
-          <RouterLink to="/" active-class="active" class="header__menu__items-link__content">Mon compte</RouterLink>
+          <RouterLink to="/game" active-class="active" class="header__menu__items-link__content">JOUER</RouterLink>
         </li>
       </ul>
     </nav>
